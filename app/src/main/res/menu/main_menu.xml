@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragmentcus"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fragment_consultationcus"
+        android:icon="@drawable/ic_consultaion"
+        android:title="@string/estshara"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fragment_doctorscus"
+        android:icon="@drawable/ic_doctors"
+        android:title="@string/doctors"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fragment_notificationcus"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/notification"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fragment_morecus"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more"
+        app:showAsAction="never" />
+</menu>

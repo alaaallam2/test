@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:tag="layout/item_favorite_0"
+        android:background="@drawable/back_blue2"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_cons"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/doc"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.utils.customViews.Custom_TextBold
+
+            android:textSize="16sp"
+            android:textColor="@color/gray_title"
+            android:id="@+id/title1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="علا عبد الفتاح"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/info_title1"
+            app:layout_constraintStart_toEndOf="@+id/img_cons"
+            app:layout_constraintTop_toTopOf="@+id/img_cons" />
+
+        <com.example.myapplication.utils.customViews.Custom_Textview
+            android:textSize="13sp"
+            android:textColor="@color/gray_info"
+            android:id="@+id/info_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="استشاري باطنة"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintStart_toStartOf="@+id/title1"
+            app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:background="@drawable/back_blue2"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title1" />
+
+        <com.example.myapplication.utils.customViews.Custom_Textview
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="100 جنيه"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_money"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/title1"
+            app:layout_constraintTop_toBottomOf="@+id/info_title1" />
+
+        <com.example.myapplication.utils.customViews.Custom_Textview
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:id="@+id/txt_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="4.8 (100 مراجعة)"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_star"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_date"
+            app:layout_constraintTop_toTopOf="@+id/txt_date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
